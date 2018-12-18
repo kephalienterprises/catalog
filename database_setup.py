@@ -50,6 +50,6 @@ class Item(Base):
            'category_id'    :   self.category_id,
            'user_id'    :   self.user_id           
        }
-
-engine = create_engine('sqlite:///categorizeditems.db')
+//engine = create_engine('sqlite:///categorizeditems.db')
+engine = create_engine('postgresql:///categorizeditems.db')
 Base.metadata.create_all(engine)
